@@ -434,8 +434,8 @@
           </div>
           <div class="terminal-body">
             <p><span class="prompt">$</span> <span class="cmd">python bot.py</span></p>
-            <p class="comment"># loading e-commerce cog…</p>
-            <p><span class="ok">✓</span> wallets connected</p>
+            <p class="comment"># /ewallet namespace loaded</p>
+            <p><span class="ok">✓</span> 16 commands registered</p>
             <p><span class="ok">✓</span> storefront ready</p>
             <p><span class="ok">✓</span> fulfillment online</p>
             <div class="terminal-rule"></div>
@@ -469,7 +469,7 @@
                 <div class="feature"><span class="check">01</span><div><strong>Member wallets</strong><span>Balances and peer-to-peer transfers.</span></div></div>
                 <div class="feature"><span class="check">02</span><div><strong>Discord storefront</strong><span>Browse and purchase without leaving the server.</span></div></div>
                 <div class="feature"><span class="check">03</span><div><strong>Auto-fulfillment</strong><span>Deliver roles and license keys after purchase.</span></div></div>
-                <div class="feature"><span class="check">04</span><div><strong>Admin controls</strong><span>Manage the economy, shop, and orders.</span></div></div>
+                <div class="feature"><span class="check">04</span><div><strong>Collision-safe commands</strong><span>All 16 commands live under the <code>/ewallet</code> namespace.</span></div></div>
                 <div class="feature"><span class="check">05</span><div><strong>Order history</strong><span>Keep purchases clear for members and staff.</span></div></div>
                 <div class="feature"><span class="check">06</span><div><strong>Signed webhooks</strong><span>HMAC verification for external storefront events.</span></div></div>
               </div>
@@ -543,6 +543,10 @@
             <details>
               <summary>What is the cog built for?</summary>
               <p>The E-Commerce &amp; Wallet System is built for Python bots using discord.py and uses Supabase for its data layer.</p>
+            </details>
+            <details>
+              <summary>Will it conflict with my bot’s existing commands?</summary>
+              <p>All 16 included slash commands are grouped under <code>/ewallet</code>. The cog does not claim <code>/economy</code>, so it can sit alongside an existing economy feature and other namespaced packs.</p>
             </details>
             <details>
               <summary>Is installation included in the $9 price?</summary>
