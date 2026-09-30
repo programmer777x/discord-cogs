@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="description" content="Production-ready discord.py cogs for server owners and bot builders. Buy the E-Commerce & Wallet System or book hands-on installation." />
+    <meta name="description" content="Production-ready discord.py cogs for server owners and bot builders. Shop commerce and auto-moderation systems or book hands-on installation." />
     <link rel="icon" href="data:," />
     <title>Discord.py Cogs by Prog</title>
     <style>
@@ -264,6 +264,7 @@
         border: 2px solid var(--line-strong);
         box-shadow: var(--shadow);
       }
+      .product-card + .product-card { margin-top: 58px; }
       .product-main { padding: clamp(30px, 5vw, 62px); }
       .product-topline {
         display: flex;
@@ -438,6 +439,7 @@
         .product-section, .service-section, .faq-section { padding: 74px 0; }
         .section-head { gap: 22px; margin-bottom: 34px; }
         .product-main, .buy-panel { padding: 26px 21px; }
+        .product-card + .product-card { margin-top: 38px; }
         .product-topline { align-items: flex-end; }
         .price { font-size: 3rem; }
         .feature-grid { grid-template-columns: 1fr; }
@@ -484,8 +486,8 @@
           <h1>Stop rebuilding the same bot features.</h1>
           <p class="hero-copy">Drop production-ready cogs into your Discord bot, configure the essentials, and move on to the part only you can build.</p>
           <div class="button-row">
-            <a class="button" href="https://codecraft188.gumroad.com/l/ecommerce-wallet-cog" target="_blank" rel="noopener noreferrer">
-              Get the cog &mdash; $9
+            <a class="button" href="#products">
+              Browse available cogs
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
             <a class="button secondary" href="https://www.fiverr.com/prog777x/add-a-feature-packed-python-bot-to-your-discord-server" target="_blank" rel="noopener noreferrer">Need a custom bot?</a>
@@ -516,9 +518,9 @@
           <div class="section-head">
             <div>
               <p class="section-label">Available now</p>
-              <h2>One cog. A complete commerce loop.</h2>
+              <h2>Two cogs. Less repeat work.</h2>
             </div>
-            <p class="section-intro">Start with the feature that turns a Discord server into a working storefront, without scattering the logic across half a dozen files.</p>
+            <p class="section-intro">Add a complete commerce loop or practical message protection without scattering the logic across half a dozen files.</p>
           </div>
 
           <article class="product-card">
@@ -552,6 +554,45 @@
               </div>
               <div>
                 <a class="button" href="https://codecraft188.gumroad.com/l/ecommerce-wallet-cog" target="_blank" rel="noopener noreferrer">
+                  Buy securely on Gumroad
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <p class="buy-note">Instant digital download after purchase.</p>
+              </div>
+            </aside>
+          </article>
+
+          <article class="product-card">
+            <div class="product-main">
+              <div class="product-topline">
+                <span class="product-tag">Moderation</span>
+                <div class="price">$9<small>launch price</small></div>
+              </div>
+              <h3>Auto-Moderation</h3>
+              <p class="product-description">A drop-in discord.py cog that removes banned words, unauthorized Discord invites, and mass-mention spam before they take over the conversation.</p>
+
+              <div class="feature-grid" aria-label="Auto-Moderation product features">
+                <div class="feature"><span class="check">01</span><div><strong>Configurable word filter</strong><span>Add or remove restricted words while the bot is running.</span></div></div>
+                <div class="feature"><span class="check">02</span><div><strong>Invite-link protection</strong><span>Detect and remove unauthorized Discord invites.</span></div></div>
+                <div class="feature"><span class="check">03</span><div><strong>Mention-spam control</strong><span>Stops messages with five or more user and role mentions.</span></div></div>
+                <div class="feature"><span class="check">04</span><div><strong>Server-specific lists</strong><span>Keep each server’s banned words isolated in Supabase.</span></div></div>
+                <div class="feature"><span class="check">05</span><div><strong>Namespaced commands</strong><span>Manage the filter through <code>/automod word add</code> and <code>remove</code>.</span></div></div>
+                <div class="feature"><span class="check">06</span><div><strong>Moderator-aware</strong><span>Members with Manage Messages bypass automatic checks.</span></div></div>
+              </div>
+            </div>
+
+            <aside class="buy-panel">
+              <div>
+                <p class="mini-title">Inside the download</p>
+                <ul class="included">
+                  <li>Ready-to-use cog source</li>
+                  <li>Supabase schema</li>
+                  <li>5-minute installation guide</li>
+                  <li>Storage layer example</li>
+                </ul>
+              </div>
+              <div>
+                <a class="button" href="https://codecraft188.gumroad.com/l/auto-moderation" target="_blank" rel="noopener noreferrer">
                   Buy securely on Gumroad
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </a>
@@ -603,15 +644,19 @@
           <div class="faq-list">
             <details>
               <summary>What do I receive after purchase?</summary>
-              <p>The package includes the cog source, its database schema, an installation guide, a Supabase store example, and the included license file.</p>
+              <p>Each package includes the cog source, its database schema, an installation guide, a Supabase storage example, and the included license file.</p>
             </details>
             <details>
-              <summary>What is the cog built for?</summary>
-              <p>The E-Commerce &amp; Wallet System is built for Python bots using discord.py and uses Supabase for its data layer.</p>
+              <summary>What are the cogs built for?</summary>
+              <p>Both cogs are built for Python bots using discord.py 2.3+ and use Supabase for their data layer.</p>
             </details>
             <details>
               <summary>Will it conflict with my bot’s existing commands?</summary>
               <p>All 16 included slash commands are grouped under <code>/ewallet</code>. The cog does not claim <code>/economy</code>, so it can sit alongside an existing economy feature and other namespaced packs.</p>
+            </details>
+            <details>
+              <summary>Does Auto-Moderation need special bot permissions?</summary>
+              <p>Yes. Enable the Message Content privileged intent in the Discord Developer Portal and invite the bot with Manage Messages so it can read and remove flagged messages.</p>
             </details>
             <details>
               <summary>Is installation included in the $9 price?</summary>
@@ -623,7 +668,7 @@
             </details>
             <details>
               <summary>Where is payment handled?</summary>
-              <p>The download is sold through <a href="https://codecraft188.gumroad.com/l/ecommerce-wallet-cog" target="_blank" rel="noopener noreferrer">Gumroad</a>. Installation and custom bot work are booked through Fiverr.</p>
+              <p>Both downloads are sold securely through Gumroad using the buy button on each product card. Installation and custom bot work are booked through Fiverr.</p>
             </details>
           </div>
         </div>
@@ -635,18 +680,18 @@
         <div>
           <p class="section-label">Pick your path</p>
           <h2>Add the feature yourself, or hand off the setup.</h2>
-          <p>Start with the E-Commerce &amp; Wallet System today.</p>
+          <p>Choose the cog your server needs today.</p>
         </div>
         <div class="final-actions">
-          <a class="button" href="https://codecraft188.gumroad.com/l/ecommerce-wallet-cog" target="_blank" rel="noopener noreferrer">Get the cog — $9</a>
+          <a class="button" href="#products">Browse both cogs</a>
           <a class="button secondary" href="https://www.fiverr.com/prog777x/add-a-feature-packed-python-bot-to-your-discord-server" target="_blank" rel="noopener noreferrer">Hire Prog</a>
         </div>
       </div>
     </footer>
 
     <div class="mobile-buy" aria-label="Quick purchase">
-      <div><strong>E-Commerce &amp; Wallet</strong><span>$9 launch price</span></div>
-      <a class="button" href="https://codecraft188.gumroad.com/l/ecommerce-wallet-cog" target="_blank" rel="noopener noreferrer">Buy</a>
+      <div><strong>Two cogs available</strong><span>$9 launch price each</span></div>
+      <a class="button" href="#products">Browse</a>
     </div>
 
     <script>
